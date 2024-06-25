@@ -6,11 +6,13 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "baseUrl": "src",
+    "types": ["@testing-library/jest-dom"],
     "paths": {
       "shared/*": ["shared/*"],
       "assets/*": ["assets/*"],
       "pages/*": ["pages/*"],
       "types/*": ["types/*"],
+      "services/*": ["services/*"],
     },
 
     /* Bundler mode */
@@ -27,6 +29,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "babel.config.cjs"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
