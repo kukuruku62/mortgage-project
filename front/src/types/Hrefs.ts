@@ -1,3 +1,3 @@
-export enum AddressLink {
-  Home = "/",
+export enum RoutesEnum {
+  Home = "/c",
 }

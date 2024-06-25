@@ -1,17 +1,97 @@
-.rectangle {
-
+.rectangleWithArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 18px;
+  padding: 18px 29px 18px 33px;
+  color: var(--white-1);
+  background-color: var(--blue-highlightText-1);
   border-radius: 5px;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
-  text-align: center;
-  padding: 20px;
-
-  @media (max-width: 768px) {
-    padding: 10px; 
-  }
+  transition: all 0.3s;
 
   @media (max-width: 568px) {
+    padding: 12px 20px;
     font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--blue-1);
+    }
+  }
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  margin-left: 100px;
+
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white-1);
+    max-width: 275px;
+  }
+}
+
+.textIconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 12px;
+
+  p {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--white-1);
+  }
+}
+
+// Triangle
+
+.triangle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  animation: pulsation 0.7s infinite alternate linear;
+
+  &::after {
+    content: "";
+    border-radius: 30px;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+  }
+
+  svg {
+    z-index: 1;
+    width: 60%;
+    height: 60%;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes pulsation {
+  from {
+    scale: 0.93;
+  }
+
+  to {
+    scale: 1;
   }
 }
