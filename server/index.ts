@@ -14,7 +14,7 @@ const start = async () => {
     await fastify.listen({ port: 3000 });
     console.log("Server started");
   } catch (err) {
-    console.error('Error starting server:', err); // Добавляем логирование ошибок при запуске сервера
+    console.error('Error starting server:', err);
     process.exit(1);
   }
 };

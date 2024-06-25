@@ -12,12 +12,14 @@ const routes: FastifyPluginAsync = async (fastify, options) => {
     return { hello: "world" };
   });
 
-  fastify.get("/mainpage", async (request, reply) => {
-    const result = await collection?.find().toArray();
+  fastify.get<{ Params: { name: string } }>("/mainpage/:name", async (request, reply) => {
 
+    const name = request.params.name
+    const result = await collection?.findOne({ name: new RegExp(`^${name}$`, 'i') });
     if (result?.length === 0) {
       throw new Error("No documents found");
     }
+  
     reply.send(result);
   });
 };
