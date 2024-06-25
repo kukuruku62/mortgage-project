@@ -1,10 +1,22 @@
 :root {
+  --blue-1: rgb(18, 104, 147);
+  --blue-button: rgba(18, 104, 147);
+  --blue-link-1: rgba(39, 143, 180, 1);
+  --blue-link-04: rgba(39, 143, 180, 0.4);
+  --blue-highlightText-1: rgba(39, 143, 180, 1);
 
-  --color-blue-1: rgba(18, 104, 147);
-  --color-blue-button: rgba(18, 104, 147);
+  --white-1: rgb(255, 255, 255, 1);
+  --white-08: rgb(255, 255, 255, 0.8);
+  --white-03: rgb(255, 255, 255, 0.3);
+  --white-02: rgb(255, 255, 255, 0.2);
 
+  --black-1: rgba(0, 0, 0, 1);
+  --black-05: rgba(0, 0, 0, 0.5);
 
-  --color-white-1: rgb(255, 255, 255, 1);
-  --color-white-02: rgb(255, 255, 255, 0.2);
-  --color-white-03: rgb(255, 255, 255, 0.3);
+  --violet-1: rgba(52, 47, 69, 1);
+  --violet-03: rgba(52, 47, 69, 0.3);
+
+  --line-separator: rgba(151, 151, 151, 0.2);
+  --dialog-overlay: rgba(135, 135, 135, 0.6);
+  --skill-icon-border: rgba(232, 232, 232, 1);
 }
