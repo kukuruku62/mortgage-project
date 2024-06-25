@@ -1,0 +1,22 @@
+.skeletonContainer {
+  width: 520px;
+  height: 540px;
+  border-radius: 5px;
+  // border: 1px solid var(--black-05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 45px 0px rgba(0, 0, 0, 0.15);
+
+  // background-color: rgba(0,0,0,.5);
+  // width: 100%;
+  // height: 200px;
+}
+
+
+.skeleton {
+  padding: 10vh 10vw;
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+}
